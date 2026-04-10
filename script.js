@@ -167,3 +167,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+/* ============================================================
+    STICKTY CTA
+============================================================ */
+const stickyCta = document.querySelector('.sticky-cta');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    stickyCta.classList.add('scrolled');
+  } else {
+    stickyCta.classList.remove('scrolled');
+  }
+});

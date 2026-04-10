@@ -773,6 +773,66 @@ body {
 }
 
 /* ============================================================
+   CTA STICKY
+============================================================ */
+
+.sticky-cta {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  bottom: auto;
+  z-index: 9999;
+  background: #23272A;
+  color: #FFFFFF;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transition: top 0.4s ease, bottom 0.4s ease, background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.sticky-cta.scrolled {
+  top: auto;
+  bottom: 24px;
+}
+
+.sticky-cta:hover {
+  background: #4dd4bc;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .sticky-cta {
+    font-size: 13px;
+    padding: 10px 16px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .sticky-cta.scrolled {
+    top: auto;
+    bottom: 12px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .sticky-cta {
+    top: 12px;
+    left: 12px;
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
+
+
+
+/* ============================================================
    RESPONSIVE
 ============================================================ */
 @media (max-width: 1024px) {
